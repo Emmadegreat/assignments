@@ -1,0 +1,336 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+header{/*----------------Header-------------------*/
+    background: #1d3044;
+    height: 70px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header li{
+    list-style-type: none;
+    padding: 0rem 2rem;
+}
+
+header li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}/*----------------Header end-------------------*/
+
+footer{/*----------------footer-------------------*/
+    height: 70px;
+    background: #1d3044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}/*----------------footer end-------------------*/
+
+body{
+    background: rgb(214, 218, 219);
+}
+
+/*----------------flex styling-------------------*/
+#flex__main{
+    margin: auto;
+    width: 60%;
+}
+
+.flex-container{
+    padding: 8rem 0rem 4rem 0rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.sedans{
+    background:  hsl(31, 77%, 52%);
+    padding: 2.5rem;
+    width: 33.33%;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+h1{
+    margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 10rem;
+}
+.sedans button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 0.2rem solid #fff;
+    background: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.sedans button:hover{
+    cursor: pointer;
+    color: hsl(31, 77%, 52%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv{
+    background: hsl(184, 100%, 22%);
+    padding: 2.5rem;
+    width: 33.33%;
+}
+.suv button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 3px solid #fff;
+    background: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.suv button:hover{
+    cursor: pointer;
+    color: hsl(184, 100%, 22%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    padding: 2.5rem;
+    width: 33.33%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.luxury button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    width: 10.3rem;
+    border: 3px solid #fff;
+    background: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.luxury button:hover{
+    cursor: pointer;
+    color: hsl(179, 100%, 13%);
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+img{
+    margin-bottom: 2rem;
+}/*----------------flex styling end-------------------*/
+
+/*----------------media query of flex__task-------------------*/
+@media screen and (max-width:1440px){
+    #flex__main{
+        width: 70%;
+        margin: aut;
+    }
+    .flex-container{
+        padding: 8rem 0rem 4rem 0rem;
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        width: 100%;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+    .sedans button{
+        padding: 0.8rem;
+        border-radius: 2.5rem;
+        width: 10.3rem;
+    }
+
+    .suv button{
+        padding: 0.8rem;
+        border-radius: 2.5rem;
+        width: 10.3rem;
+    }
+    .luxury button{
+        padding: 0.8rem;
+        border-radius: 2.5rem;
+        width: 10.3rem;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:900px){
+    #flex__main{
+        width: 70%;
+    }
+    .sedans button{
+        padding: 0.6rem;
+        border-radius: 2.5rem;
+        width: 9rem;
+    }
+
+    .suv button{
+        padding: 0.6rem;
+        border-radius: 2.5rem;
+        width: 9rem;
+    }
+    .luxury button{
+        padding: 0.6rem;
+        border-radius: 2.5rem;
+        width: 9rem;
+    }
+    .sedans,.suv,.luxury{
+        padding: 1rem;
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+    p{
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    #flex__main{
+        margin: auto;
+        width: 50%;
+        padding: 3rem 0rem;
+    }
+
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sedans button{
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        width: 8rem;
+    }
+    .suv button{
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        width: 8rem;
+        align-items: center;
+    }
+    .luxury button{
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        width: 8rem;
+    }
+    .sedans,.suv,.luxury{
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .sedans{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury{
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 0px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width:500px){
+        #flex__main{
+            width: 65%;
+        }
+    }
+}/*----------------media query of flex_-task end-------------------*/
+
+
+/*--------------GRID__TASK STYLING-------------*/
+
+.grid__main{
+    padding: 5rem;
+}
+
+.grid-container{
+    height: 600px;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    'a a a b'
+    'c c d d'
+    'c c e e'
+    ;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    margin: auto;
+}
+
+.grid-container > div{
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Item-a{
+    background: red;
+    grid-area: a;
+
+}
+
+.Item-b{
+    background: yellow;
+    grid-area: b;
+}
+
+.Item-c{
+    background: green;
+    grid-area: c;
+
+}
+
+
+
+.Item-d{
+    background: dodgerblue;
+    grid-area: d;
+}
+
+.Item-e{
+    background: dodgerblue;
+    grid-area: e;
+}
+
+@media screen and (max-width:768px){
+    .grid-container{
+        height: auto;
+        max-width: 500px;
+        display: grid;
+        padding: 10px 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 4fr 2fr 2fr;
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        ;
+    }
+}
+/*----------------grif task styling end-------------------*/

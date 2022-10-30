@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background: #fdf3f2;
+}
+header {
+  background: #1d3044;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+header h1{
+    color: chocolate;
+}
+
+header a{
+  font-size: 1.3rem;
+  color: #fdf3f2;
+  font-weight: 600;
+}
+header a:hover{
+  color: chocolate;
+}
+
+footer {
+  background: #1d3044;
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+    color: chocolate;
+    text-decoration: none;
+}
+
+#main {
+  padding: 3rem;
+}
+
+section {
+  padding-top: 6rem;
+  margin: auto;
+  border: 1px solid re;
+  max-width: 400px;
+  text-align: cente;
+  font-size: 1.1rem;
+}
+h2 {
+  padding-bottom: 2rem;
+}
+#check {
+  margin-top: 1.1rem;
+  width: 15px;
+  height: 15px;
+
+}
+input,
+select {
+  padding: 0.2rem 0.5rem;
+  width: 300px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+
+
+button {
+  padding: 0rem 0.5rem;
+  width: 300px;
+  height: 38px;
+  border-radius: 6px;
+  background: #1d3044;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-width: 0rem;
+  margin-bottom: 0.7rem;
+}
+
+button:hover {
+  background: green;
+  color: #fff;
+}
+
+label{
+  text-align: start;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+#success-section{
+  padding-bottom: 16rem;
+}
+/*media query*/
+
+@media screen and (max-width:400px){
+  input,
+  select,button {
+    padding: 0.2rem 0.5rem;
+    width: 250px;
+    height: 36px;
+
+  }
+  header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2rem 0.5rem;
+  }
+  header h1{
+    font-size: 1.3rem;
+  }
+  header a{
+    font-size: 1rem;
+  }
+}
